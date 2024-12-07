@@ -102,7 +102,7 @@ public class main {
     }
     
     public static void part1() {
-        System.out.println("AoC Day 7 Part 1");
+        System.out.println("AoC Day 7 Part 2");
        
         ArrayList<Long> results = new ArrayList<>();
         ArrayList<int[]> operands = new ArrayList<>();
@@ -163,29 +163,6 @@ public class main {
         System.out.println("Total of results: " + total);      
     }
  
-    public static void part2()
-    {
-        System.out.println("AoC Day 7 Part 2");
-       
-        boolean full = true;
-        Scanner scanner = null;
- 
-        try {
-            if (full) {
-                scanner = new Scanner(new File("input.txt"));
-            } else {
-                scanner = new Scanner(new File("input_test.txt"));
-            }
-        }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
- 
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            System.out.println(line);
-        }
-    }
    public static void main(String[] args) {
     part1();
    }
